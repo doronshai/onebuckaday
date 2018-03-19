@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import re, csv, subprocess, urllib
+import re, csv, subprocess, urllib, select
 
 from time import sleep, time
 from random import uniform, randint
@@ -55,7 +55,8 @@ if __name__=="__main__":
 	driver.find_element_by_xpath('//*[@id="id15"]/option[text()="1981"]').click()
 	driver.find_element_by_xpath('//*[@id="id16"]/option[text()="Hungary"]').click()
 	driver.find_element_by_xpath('//*[@id="id1e"]').send_keys("james.brown.1981")
-	driver.find_element_by_xpath('//*[@id="id1f"]/option[value()="option9"]').click()
+
+	driver.find_element_by_xpath('//*[@label="Top Choices"]/option[text()="writeme.com"]').click()
 
 	driver.find_element_by_xpath('//*[@id="id2c"]').send_keys("Aa123456")
 	driver.find_element_by_xpath('//*[@id="id2f"]').send_keys("Aa123456")
