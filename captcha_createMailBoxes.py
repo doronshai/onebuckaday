@@ -46,12 +46,25 @@ if __name__=="__main__":
 
 
 	print('Fill Login details and change Captcha')
-	driver.find_element_by_css_selector("input[class='Text ColouredFocus']").send_keys("james");
-	driver.find_element_by_css_selector("input[value name='z372051348']").send_keys("aaaaaaaaaa");
-	# driver.find_element_by_class_name("Required userdata-firstname").send_keys("james");
-	# driver.find_element_by_xpath('//*[@id="id4f"]').send_keys("james")
-	# driver.find_element_by_xpath('//*[@id="id51"]').send_keys("lulu")
-	# driver.find_element_by_xpath('//*[@id="id58"]/option[text()="Mar"]').click()
+	# driver.find_element_by_css_selector("input[class='Text ColouredFocus']").send_keys("james");
+	driver.find_element_by_xpath('//*[@id="idb"]').send_keys("james")
+	driver.find_element_by_xpath('//*[@id="idd"]').send_keys("brown")
+	driver.find_element_by_xpath('//*[@id="idf"]/option[text()="Male"]').click()	
+	driver.find_element_by_xpath('//*[@id="id14"]/option[text()="Mar"]').click()
+	driver.find_element_by_xpath('//*[@id="id11"]/option[text()="19"]').click()
+	driver.find_element_by_xpath('//*[@id="id15"]/option[text()="1981"]').click()
+	driver.find_element_by_xpath('//*[@id="id16"]/option[text()="Hungary"]').click()
+	driver.find_element_by_xpath('//*[@id="id1e"]').send_keys("james.brown.1981")
+	driver.find_element_by_xpath('//*[@id="id1f"]/option[value()="option9"]').click()
+
+	driver.find_element_by_xpath('//*[@id="id2c"]').send_keys("Aa123456")
+	driver.find_element_by_xpath('//*[@id="id2f"]').send_keys("Aa123456")
+	driver.find_element_by_xpath('//*[@id="id34"]').send_keys("oobarnashoo@gmail.com")
+	driver.find_element_by_xpath('//*[@id="id37"]/option[text()="What city were you born in?"]').click()
+
+	driver.find_element_by_xpath('//*[@id="id39"]').send_keys("Mambo Jambo")
+
+	sleep(10)
 
 	# driver.find_element_by_id("id51").send_keys("lulu")
 
